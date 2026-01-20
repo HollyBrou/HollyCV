@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Holly Brou | Communication & Événementiel</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--pink:#ff5fa2;
+--purple:#6c5ce7;
+--dark:#0e1024;
+--light:#f4f6ff;
+--glass:rgba(255,255,255,0.15);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+
+body{
+background:linear-gradient(120deg,var(--purple),var(--pink));
+color:#fff;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:var(--glass);
+backdrop-filter:blur(12px);
+padding:15px 30px;
+border-radius:50px;
+display:flex;
+gap:25px;
+z-index:999;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+padding-top:150px; /* empêche la barre de manger la photo */ }
+
+.hero-photo{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:25px;
+border:5px solid rgba(255,255,255,0.6);
+box-shadow:0 15px 30px rgba(0,0,0,0.25); }
+
+.hero h1{
+font-size:4em;
+font-weight:800;
+}
+
+.hero h2{
+margin-top:15px;
+font-weight:300;
+}
+
+.hero p{
+margin-top:25px;
+max-width:900px;
+line-height:1.8;
+font-size:1.05em;
+}
+
+.badge{
+margin-top:30px;
+padding:14px 35px;
+background:#fff;
+color:#000;
+border-radius:40px;
+font-weight:800;
+}
+
+/* BUTTONS */
+.hero-buttons{
+margin-top:40px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:16px 40px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+transition:0.3s;
+}
+
+.btn.primary{background:#fff;color:#000;}
+.btn.secondary{border:2px solid #fff;color:#fff;}
+
+.btn:hover{transform:translateY(-5px);}
+
+/* SECTIONS */
+section{
+padding:100px 12%;
+background:var(--light);
+color:#000;
+}
+
+section.dark{
+background:var(--dark);
+color:#fff;
+}
+
+h3{
+font-size:2.6em;
+margin-bottom:50px;
+text-align:center;
+}
+
+/* PROFIL */
+.profile{
+max-width:900px;
+margin:auto;
+font-size:1.15em;
+line-height:1.9;
+text-align:center;
+}
+
+/* TIMELINE */
+.timeline{
+max-width:900px;
+margin:auto;
+}
+
+.event{
+margin-bottom:40px;
+background:#fff;
+color:#000;
+padding:30px;
+border-radius:25px;
+box-shadow:0 15px 30px rgba(0,0,0,0.15); }
+
+.event h4{
+color:var(--purple);
+margin-bottom:10px;
+}
+
+.event ul{
+padding-left:20px;
+}
+
+.event li{
+margin-bottom:8px;
+}
+
+/* COMPETENCES */
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.skill-card{
+background:#fff;
+color:#000;
+padding:30px;
+border-radius:25px;
+box-shadow:0 15px 30px rgba(0,0,0,0.15); }
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill span{
+font-weight:600;
+display:block;
+margin-bottom:6px;
+}
+
+.bar{
+height:8px;
+background:#e0e0e0;
+border-radius:10px;
+overflow:hidden;
+}
+
+.bar div{
+height:100%;
+width:80%;
+background:linear-gradient(90deg,var(--purple),var(--pink));
+}
+
+/* TAGS */
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+max-width:900px;
+margin:auto;
+}
+
+.tag{
+padding:12px 22px;
+border-radius:30px;
+background:linear-gradient(90deg,var(--purple),var(--pink));
+color:#fff;
+font-weight:700;
+}
+
+/* FOOTER */
+footer{
+padding:40px;
+text-align:center;
+background:#000;
+color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#profil">Profil</a>
+<a href="#experience">Expériences</a>
+<a href="#formations">Formations</a>
+<a href="#competences">Compétences</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<img src="photo-holly.jpg" alt="Photo de Holly Brou" class="hero-photo">
+
+<h1>HOLLY BROU</h1>
+<h2>Communication & Événementiel</h2>
+
+<p>
+<strong>Vous recherchez votre future apprentie en communication ou en événementiel ?</strong><br><br> Étudiante en Master Stratégie et Production Événementielle, je souhaite mettre ma créativité, mon sens de l’organisation et mes compétences en gestion de projet au service d’une entreprise dynamique, à travers une alternance mêlant stratégie, terrain et impact.
+</p>
+
+<div class="badge">🚀 DISPONIBLE EN ALTERNANCE</div>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn primary">📩 Me contacter</a> <a href="#experience" class="btn secondary">👀 Découvrir mon profil</a> </div> </div>
+
+<!-- PROFIL -->
+<section id="profil">
+<h3>Profil</h3>
+<div class="profile">
+Diplômée d’une licence en gestion–marketing à l’IAE d’Orléans, j’ai développé une approche polyvalente alliant communication, marketing et gestion de projets.
+Mon parcours m’a permis de participer à des projets événementiels, de travailler sur des stratégies de communication et de collaborer avec différents acteurs (clients, prestataires, partenaires).
+Je recherche aujourd’hui une alternance pour approfondir mes compétences et contribuer concrètement à des projets à forte valeur ajoutée.
+</div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experience" class="dark">
+<h3>Expériences professionnelles</h3>
+
+<div class="timeline">
+<div class="event">
+<h4>Responsable des ventes – Abbas Fruits & Légumes</h4> <ul> <li>Gestion opérationnelle des ventes, de la caisse et des stocks</li> <li>Prospection B2B et développement de relations commerciales durables</li> <li>Sourcing et coordination avec des partenaires et fournisseurs</li> </ul> </div>
+
+<div class="event">
+<h4>Stage Stratégie de Communication & Gestion de projet – NVLLE SODA</h4> <ul> <li>Élaboration et mise en œuvre de stratégies de communication</li> <li>Participation à l’organisation de projets et événements promotionnels</li> <li>Actions de prospection B2B et suivi des partenaires</li> </ul> </div>
+
+<div class="event">
+<h4>Hôtesse d’accueil – Agence Profil</h4> <ul> <li>Accueil et accompagnement des visiteurs lors d’événements</li> <li>Gestion de l’image de marque et de l’expérience participant</li> <li>Appui logistique et organisationnel</li> </ul> </div>
+
+<div class="event">
+<h4>Bénévolat – Les Zinzins du Bonheur</h4> <ul> <li>Participation à des actions solidaires et événementielles</li> <li>Distribution de kits scolaires</li> <li>Engagement associatif et travail en équipe</li> </ul> </div> </div> </section>
+
+<!-- FORMATIONS -->
+<section id="formations">
+<h3>Formations</h3>
+
+<div class="timeline">
+<div class="event">
+<h4>Master Stratégie & Production Événementielle – Sup de Pub</h4> <ul> <li>Conception et pilotage de projets événementiels</li> <li>Stratégies de communication et marketing événementiel</li> <li>Gestion budgétaire, coordination des acteurs et analyse d’impact</li> </ul> </div>
+
+<div class="event">
+<h4>Licence Économie–Gestion, spécialité Marketing – IAE d’Orléans</h4> <ul> <li>Fondamentaux du marketing et de la communication</li> <li>Gestion de projet et analyse stratégique</li> <li>Travaux de groupe et projets appliqués</li> </ul> </div>
+
+<div class="event">
+<h4>Baccalauréat Économique et Social</h4> <ul> <li>Culture économique et sociale</li> <li>Développement de l’esprit analytique</li> <li>Bases en communication écrite et orale</li> </ul> </div> </div> </section>
+
+<!-- COMPETENCES -->
+<section id="competences" class="dark">
+<h3>Compétences</h3>
+
+<div class="skills-grid">
+<div class="skill-card">
+<h4>Gestion de projet</h4>
+<div class="skill">
+<span>Planification, coordination et suivi de projets événementiels</span> <div class="bar"><div></div></div> </div> <div class="skill"> <span>Organisation logistique et gestion des prestataires</span> <div class="bar"><div></div></div> </div> </div>
+
+<div class="skill-card">
+<h4>Communication & marketing digital</h4> <div class="skill"> <span>Création de contenus et animation des réseaux sociaux</span> <div class="bar"><div></div></div> </div> <div class="skill"> <span>Stratégies de communication et relations publiques</span> <div class="bar"><div></div></div> </div> </div> </div>
+
+<br><br>
+
+<div class="tags">
+<div class="tag">Français – Natif</div>
+<div class="tag">Anglais – Courant</div> </div> </section>
+
+<!-- QUALITES -->
+<section>
+<h3>Qualités</h3>
+<div class="tags">
+<div class="tag">Créativité</div>
+<div class="tag">Esprit d’équipe</div>
+<div class="tag">Autonomie</div>
+<div class="tag">Organisation</div>
+<div class="tag">Adaptabilité</div>
+</div>
+</section>
+
+<!-- INTERETS -->
+<section class="dark">
+<h3>Centres d’intérêt</h3>
+<div class="tags">
+<div class="tag">Voyage</div>
+<div class="tag">Cuisine</div>
+<div class="tag">Montage vidéo</div>
+<div class="tag">Développement personnel</div> </div> </section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h3>Contact</h3>
+<div class="profile">
+📍 Orléans – Mobile partout en France<br>
+📞 06 66 42 06 29<br>
+✉️ bhollymelikalofanny@gmail.com
+</div>
+</section>
+
+<footer>
+© Holly Brou – Communication & Événementiel </footer>
+
+</body>
+</html>
+
+
